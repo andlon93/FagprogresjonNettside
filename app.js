@@ -1,6 +1,6 @@
 var main = function(){
 	$('.addCourse').click(function(){
-		$(this).hide();
+		$('<li>').text("TDT4171").appendTo('.courses');
 	});
 };
 
