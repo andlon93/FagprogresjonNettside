@@ -18,7 +18,7 @@ body{
 .navigation-bar li {
     float: left;
 }
-.navigation-bar a:link, a:visited {
+.navigation-bar button:link, button:visited {
     display: block;
     width: 120px;
     font-weight: bold;
@@ -29,9 +29,31 @@ body{
     text-decoration: none;
     text-transform: uppercase;
 }
-.navigation-bar a:hover, a:active {
+.navigation-bar button:hover, button:active {
     /*background-color: #7A991A;*/
     background-color: #FFFFFF;
     color: #66C285;
 }
-/*----------------------------?????????????-------------------------*/
+/*----------------------------Navigasjonslinjeknapper-------------------------*/
+.MainButtons {
+    background-color:#1a9128;
+    -moz-border-radius:42px;
+    -webkit-border-radius:42px;
+    border-radius:42px;
+    border:3px solid #5dba27;
+    display:inline-block;
+    cursor:pointer;
+    color:#630c0c;
+    font-family:Verdana;
+    font-size:20px;
+    font-weight:bold;
+    padding:12px 53px;
+    text-decoration:none;
+}
+.MainButtons:hover {
+    background-color:#5dba27;
+}
+.MainButtons:active {
+    position:relative;
+    top:1px;
+}
