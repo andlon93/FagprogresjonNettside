@@ -1,6 +1,18 @@
 var main = function(){
+	$('.form-group').hide();
+
 	$('.addCourse').click(function(){
-		$('<li>').text("TDT4171").appendTo('.courses');
+		$('.courses').hide();
+		$('.form-group').show();
+	});
+
+	$('.courseBTN').click(function(){
+		$('.form-group').hide();
+		var courseName = $('courseName').val();
+		$('<li>').text(courseName).appendTo('.courses');
+		$('.courses').show();
+
+				
 	});
 };
 
